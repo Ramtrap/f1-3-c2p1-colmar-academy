@@ -1,0 +1,684 @@
+/*********************UNIVERSAL*********************/
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #454145;
+    margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.125rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  border: 1px solid #ffedef;
+}
+
+.mobile {
+  display: none;
+}
+
+a,
+.logo img,
+.read-more,
+.legal ul li a {
+  transition: all 0.25s ease-in-out 0.1s;
+}
+
+.button-transition:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #F905ED;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
+
+.image-transition:hover {
+  font-weight: bold;
+  height: 2.5rem;
+  color: white;
+  background-color: #F905ED;
+  margin: 0.75rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
+
+.read-more:hover {
+  font-weight: 300;
+  color: white;
+  background-color: #20BADC;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+}
+
+.legal ul li a:hover {
+  font-weight: bold;
+  color: #f905ed;
+}
+
+
+/*********************HEADER*********************/
+header {
+  background-color: white;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  height: 4rem;
+}
+
+.logo a {
+  color: #454145;
+}
+
+.logo-image-container img {
+  height: 2.25rem;
+  margin: 1rem 0.1rem 1rem 1.5rem;
+}
+
+.color2 {
+  color: #f905ed;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  padding-right: 1rem;
+}
+
+.menu li a {
+  color: #454145;
+}
+
+#last-menu-item {
+  padding-right: 0.5rem;
+}
+
+
+/*********************HEADER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .mobile img {
+    height: 3rem;
+  }
+  .logo-image-container img {
+    margin: 0;
+  }
+  .logo.image-container {
+    display: none;
+  }
+  .logo {
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+  }
+  .logo-image-container {
+    display: none;
+  }
+}
+
+
+/*********************BANNER*********************/
+.banner {
+  display: flex;
+  background-color: #ffedfe;
+}
+
+.banner-left {
+  max-width: 60%;
+}
+
+.banner-left-container {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.banner-image-container {
+  width: 100%;
+}
+
+.banner-right {
+  display: flex;
+  align-content: center;
+  padding: 2rem 1.5rem 2rem 1rem;
+}
+
+.banner-right-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-text-spacing {
+  padding: 0.75rem 0;
+}
+
+.banner-button {
+  font-family: 'Open Sans', sans-serif;
+  align-self: center;
+  width: 50%;
+  text-align: center;
+  background-color: #fdabf9;
+  margin-top: 0.75rem;
+  color: #454145;
+  font-size: 1.25rem;
+  font-weight: 900;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px #454145;
+  padding: 0.5rem 0;
+}
+.banner-button {
+  padding: 0.5rem 1rem;
+}
+
+
+/*********************BANNER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 960px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .banner-button {
+    width: 9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    flex-direction: column;
+  }
+  .desktop {
+    display: none;
+  }
+  .banner-left {
+    background-color: #f905ed;
+    max-width: 100%;
+    height: 11.25rem;
+  }
+  .banner-right {
+    padding: 2rem 1rem;
+  }
+  .banner-text-spacing {
+    padding: 0;
+  }
+  .banner-right-text-container h3 {
+    padding: 2rem 0 1.5rem 0;
+  }
+  .banner-button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+}
+
+
+/*********************MAIN*********************/
+.main {
+  background-color: white;
+  display: flex;
+}
+
+.main-left,
+.main-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-left {
+  max-width: 60%;
+  border-right: 1px solid #ffedfe;
+}
+
+.main-left-container {
+  display: flex;
+  flex-direction: column;
+}
+.main-left-content-container {
+  padding: 2rem 1.5rem;
+}
+
+.main-left-image-container {
+  width: 100%;
+}
+
+.main-left-text-container {
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.main-left-text-container h2 {
+  font-weight: bold;
+}
+
+.quote {
+  font-family: 'Cedarville Cursive', cursive;
+  padding: 1.5rem 0 2rem 0;
+  font-size: 0.95rem;
+}
+
+.main-right {
+  flex: 1;
+}
+
+.main-right-content-container {
+  display: flex;
+  padding: 2rem 1rem 2rem 1rem;
+  align-items: center;
+}
+
+.main-right-image-container {
+  max-width: 35%;
+}
+
+.main-right-content-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1rem 0 0 1rem;
+}
+
+#orientation {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+#campus {
+  border-top: 1px solid #ffedfe;
+  padding: 1rem;
+}
+
+#lecture {
+  background-color: #ffedfe;
+  padding: 1rem;
+}
+
+.main-right-content-text h3,
+.main-right-content-text h6 {
+  padding-bottom: 0.5rem;
+}
+
+
+/*********************MAIN: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 644px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main-right-content-text h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+
+  .main-right-content-text h6 {
+    font-size: 1.5rem;
+  }
+
+  .read-more {
+    font-size: 1.25rem;
+    color: #20BADC;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .main {
+    background-color: white;
+  }
+
+  .main-right {
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-right-content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .main-right-image-container {
+    max-width: 100%;
+  }
+
+  #orientation,
+  #campus,
+  #lecture {
+    border: 0;
+    background-color: white;
+  }
+
+  #orientation,
+  #campus {
+    padding: 1rem;
+  }
+
+  #lecture {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .main-right-content-text {
+    align-self: flex-start;
+  }
+}
+
+
+/*********************COURSES*********************/
+.courses {
+  background-color: #ffedfe;
+  padding-top: 1rem;
+}
+
+.courses-material {
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+.courses h2 {
+text-align: center;
+padding-bottom: 1rem;
+}
+
+.courses-offered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.course-image-container {
+  margin: 1rem;
+  min-width: 26%;
+  max-width: 28%;
+  background-color: white;
+}
+
+.course-text {
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.course-text h3 {
+  font-size: 1rem;
+}
+
+.courses-heading {
+  padding: 0.5rem 0;
+}
+
+.course-description {
+  padding-bottom: 1.5rem;
+}
+
+
+/*********************COURSES: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 700px) {
+  .course-text h4 {
+    font-size: 1rem;
+  }
+  .course-text h3 {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .courses-material .desktop {
+    display: none;
+  }
+  .courses-material .mobile {
+    display: block;
+    padding-top: 1rem;
+  }
+  .courses {
+    background-color: white;
+  }
+  .courses-button {
+    background-color: #fd9af8;
+    padding: 0.75rem;
+    margin: 0.5rem;
+  }
+  div .mobile h4 {
+    border-radius: 0.75rem;
+  }
+  div .mobile h4:hover {
+    font-weight: bold;
+    color: white;
+    background-color: #F905ED;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    box-shadow: 4px 4px 4px #454145;
+  }
+}
+
+
+/*********************THESIS*********************/
+.thesis-container {
+  background-color: white;
+  text-align: center;
+}
+
+.thesis-container h2 {
+  padding: 2rem 0;
+}
+
+.thesis {
+  display: flex;
+  padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.thesis-background h2 {
+padding-bottom: 1rem;
+}
+
+.thesis-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  min-width: 60%;
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.thesis-video-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-text-container {
+  padding-top: 1.5rem;
+  text-align: left;
+}
+
+.thesis h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.video-text-container .excerpt {
+  font-family: 'Cedarville Cursive', cursive;
+  line-height: 1.2;
+  font-size: .9rem;
+  padding-top: 1rem;
+}
+
+.thesis-subcontent {
+  display: flex;
+  flex-direction: column;
+}
+
+.thesis-substory {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.thesis-substory-image {
+  flex: 1;
+  max-width: 35%;
+  min-width: 35%;
+}
+
+.thesis-substory-text {
+  text-align: left;
+  padding: 1rem;
+}
+
+.thesis-substory-text span {
+  font-size: 0.90rem;
+}
+
+.thesis-substory-styling {
+  padding: 1rem 0 1rem 1rem;
+}
+
+#fisma-styling {
+  background-color: #ffedfe;
+}
+
+
+/*********************THESIS: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 800px) {
+  .thesis-substory-image {
+    flex: 1;
+    max-width: 50%;
+    min-width: 50%;
+  }
+  .thesis-substory {
+    flex-direction: column;
+    align-items: center;
+  }
+  .thesis-substory-text h4 {
+    font-size: 1rem;
+  }
+  .thesis-substory-styling {
+    padding: 0;
+  }
+  #fisma-styling {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+.thesis-container .mobile {
+  padding: 2rem 0 1rem 0;
+}
+.thesis-content {
+  max-width: 100%;
+  min-width: 100%;
+  padding: 1rem 0 0 0;
+  }
+  .thesis-subcontent {
+    display: none;
+  }
+}
+
+
+/*********************FOOTER*********************/
+footer {
+  display: flex;
+  background-color: #ffedfe;
+  font-size: 0.75rem;
+}
+
+.footer-container {
+  display: flex;
+  width: 100%;
+  border-top: 1px solid #f905ed;
+}
+
+.copyright {
+  flex: 1;
+  padding: 1rem 0 1.75rem 1.5rem;
+}
+
+.legal {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem 1.75rem 0;
+}
+
+.legal ul {
+display: flex;
+justify-content: center;
+}
+
+.legal ul li a {
+  color: black;
+}
+
+.terms {
+  padding-right: 1.5rem;
+}
+
+
+/*********************FOOTER: RESPONSIVE DESIGN*********************/
+@media only screen and (max-width: 480px) {
+  .copyright {
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  .legal {
+    display: none;
+  }
+}
